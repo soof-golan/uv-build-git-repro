@@ -1,0 +1,19 @@
+version = 1
+revision = 2
+requires-python = ">=3.10"
+
+[[package]]
+name = "uv-build-git-repro"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "uv-build-git-repro-dep" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "uv-build-git-repro-dep", git = "https://github.com/soof-golan/uv-build-git-repro-dep" }]
+
+[[package]]
+name = "uv-build-git-repro-dep"
+version = "0.1.0"
+source = { git = "https://github.com/soof-golan/uv-build-git-repro-dep#570790e3fdaf7f73709dd4ba772cf59bf42073cd" }

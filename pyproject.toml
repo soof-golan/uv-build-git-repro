@@ -7,8 +7,13 @@ authors = [
     { name = "Soof Golan", email = "hi@soofgolan.com" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "uv-build-git-repro-dep",
+]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.uv.sources]
+uv-build-git-repro-dep = { git = "https://github.com/soof-golan/uv-build-git-repro-dep" }
